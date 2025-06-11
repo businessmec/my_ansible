@@ -1,0 +1,20 @@
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py --user
+
+
+pip install --user ansible
+
+mkdir ansible_quickstart && cd ansible_quickstart
+
+
+[myhosts]
+172.189.184.19
+
+
+https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html
+
+
+
+ansible-playbook -i inventory.ini playbook.yaml --ask-pass
+
+sudo dnf install sshpass
